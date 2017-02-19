@@ -1,0 +1,17 @@
+<ul>
+  {{#each articles}}
+  	<div>
+    <li>
+      <p> Article Title :  {{title}}</p>
+      <p> Link : {{link}}</p>
+
+      <form action="/article/{{this._id}}/note" method="post">
+      <input type ="text" name="title"/>
+      <input type ="submit" value = "Add note">
+      </form>
+
+   
+    </li>
+    </div>
+  {{/each}}
+</ul>

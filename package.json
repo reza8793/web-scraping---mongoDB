@@ -1,0 +1,29 @@
+{
+  "name": "webscraping",
+  "version": "1.0.0",
+  "description": "webscraping with mongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reza8793/web-scraping---mongoDB.git"
+  },
+  "author": "abdullah abed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reza8793/web-scraping---mongoDB/issues"
+  },
+  "homepage": "https://github.com/reza8793/web-scraping---mongoDB#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.8.2",
+    "morgan": "^1.8.1",
+    "request": "^2.79.0"
+  }
+}
