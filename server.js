@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/webscrapingmongoose");
+mongoose.connect("mongodb://heroku_gv6s1vvz:vk6ht5vo9mjghigo0una6mr8cj@ds157539.mlab.com:57539/heroku_gv6s1vvz");
 
 var db = mongoose.connection;
 
@@ -157,6 +157,31 @@ console.log(req.body);
 
 
 app.get("/savedArticles", function(req, res){
+
+	Article.find({saved:true},function(err, response) {
+
+		if(err) 
+		{
+				console.log(err);
+		}
+
+		else {
+					console.log(response);
+
+					res.render("index",{articles:response});
+					//res.send(response);
+					//res.sendFile(path.join(__dirname+'saved.html'));
+  				
+			 }
+	});
+
+
+
+});
+
+
+
+app.get("/articleWithNotes", function(req, res){
 
 	Article.find({saved:true},function(err, response) {
 
