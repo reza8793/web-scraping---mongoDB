@@ -49,6 +49,14 @@ $(document).on('click',"#savedbutton",function (){
 
 
 
+
+
+
+
+
+
+
+
 $(document).on("click", "p", function() {
 
 	$("#notes").empty();
